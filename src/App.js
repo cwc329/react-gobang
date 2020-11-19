@@ -125,7 +125,14 @@ function App() {
 
   useEffect(() => {
     const { records } = gameStatus;
-    if (records.length !== 0) {
+    if (records.length === 19 * 19) {
+      setGameStatus(
+        {
+          ...gameStatus,
+          winner: 'draw'
+        }
+      )
+    }else if (records.length !== 0) {
       console.log('deciding');
       const { x, y } = records[records.length - 1];
       console.log({x,y})
@@ -137,7 +144,7 @@ function App() {
   useEffect(() => {
     if (gameStatus.winner) 
       {
-        alert(`${gameStatus.winner === 'black' ? '黑子' : '白子'}勝`)
+        alert(gameStatus.winner === 'black' ? '黑子勝' : gameStatus.winner === 'white' ? '白子勝' : '平手')
       }
   }, [gameStatus.winner])
 
