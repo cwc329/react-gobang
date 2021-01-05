@@ -1,4 +1,6 @@
 # React 五子棋小遊戲
+---
+[demo](https://cwc329.github.io/gobang)
 ## 遊玩方式
 
 ```
@@ -7,7 +9,7 @@ cd gobang
 npm install
 npm start
 ```
-依序執行以下指令即可在瀏覽器上執行遊戲
+在瀏覽器網址列輸入：http://localhost:3000 即可上遊玩遊戲
 
 ## 規則
 1. 黑子先下。
