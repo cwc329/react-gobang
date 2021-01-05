@@ -1,6 +1,6 @@
 # React 五子棋小遊戲
 ---
-[demo](https://cwc329.github.io/gobang)
+[demo](https://cwc329.github.io/react-gobang/)
 ## 遊玩方式
 
 ```
